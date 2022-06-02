@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ----- ROOT VARIABLES ----- */
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-broder-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: var(--color-background);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+header {
+    margin-bottom: 32px;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    max-width: 294px;
+    padding: 8px;
+    text-align: center;
+    color: var(--color-dark);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 2rem;
+    height: 2rem;
+}
+
+header h1 span {color: var(--color-danger);}
+
+
+.container {
+    background: var(--color-white);
+    width: fit-content;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+form > h1 {
+    color: var(--color-primary);
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.texto {
+    font-size: large;
+    font-weight: normal;
+    margin-top: 8px;
+    color: var(--color-info-dark);
+}
+
+input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 8px;
+    background-color: var(--color-background);
+    border: 1px solid rgba(0, 0, 0, 0.314);
+}
+
+#esqueci {
+    margin-top: 2px;
+    margin-bottom: 16px;
+    font-size: small;
+    color: #717171;
+    font-weight: bold;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao a {
+    width: 100%;
+    color: white;
+}
+
+#cadastro {
+    margin-top: 16px;
+    text-align: center;
+    color: #717171;
+}
